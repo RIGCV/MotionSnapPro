@@ -60,3 +60,7 @@
 - USB摄像头或内置摄像头
 - 直接下载可用
 
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/33708a7e-021e-4765-af78-14801da4494e" />
+![Uploading image.png…]()
+
