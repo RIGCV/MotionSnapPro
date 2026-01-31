@@ -1,14 +1,81 @@
-🎯 Smart Motion Detection System
-<div align="left">
-https://img.shields.io/badge/Python-3.7%252B-blue
-https://img.shields.io/badge/GUI-PyQt5-green
-https://img.shields.io/badge/Computer_Vision-OpenCV-orange
-https://img.shields.io/badge/AI-YOLO_Detection-red
-https://img.shields.io/badge/License-MIT-yellow
+&lt;p align="left"&gt;
+  &lt;img src="https://img.shields.io/badge/Python-3.7+-blue.svg" alt="Python Version"&gt;
+  &lt;img src="https://img.shields.io/badge/OpenCV-4.x-green.svg" alt="OpenCV"&gt;
+  &lt;img src="https://img.shields.io/badge/PyQt5-5.x-orange.svg" alt="PyQt5"&gt;
+  &lt;img src="https://img.shields.io/badge/YOLO-v3/v3--tiny-red.svg" alt="YOLO"&gt;
+  &lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"&gt;
+&lt;/p&gt;
 
-智能动态监控系统 | 基于YOLO的移动人物检测解决方案
+&lt;h1 align="center"&gt;智能动态监控系统 V2.4&lt;/h1&gt;
+&lt;p align="center"&gt;
+  &lt;b&gt;基于YOLO与背景减除算法的实时移动人物检测系统&lt;/b&gt;&lt;br&gt;
+  &lt;i&gt;Industrial-grade Intelligent Dynamic Monitoring System&lt;/i&gt;
+&lt;/p&gt;
 
-https://img.shields.io/badge/%F0%9F%93%BA-%E8%A7%82%E7%9C%8B%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-blueviolet
-https://img.shields.io/badge/%F0%9F%92%BE-%E4%B8%8B%E8%BD%BDWindows%E7%89%88%E6%9C%AC-success
+---
 
-</div>
+## 📋 项目简介
+
+智能动态监控系统是一款基于 **Python + OpenCV + PyQt5** 开发的高性能实时视频监控软件。系统采用 **YOLOv3/v3-tiny** 深度学习模型结合 **MOG2背景减除算法**，实现精准的**动态人物检测**，有效过滤静态背景干扰，适用于工业监控、安防巡检、人流统计等场景。
+
+### ✨ 核心优势
+- 🎯 **双重过滤机制**：YOLO目标检测 + 背景减除算法，仅捕捉移动人物，减少误报
+- ⚡ **高性能架构**：采集/检测双线程分离，帧缓冲队列设计，UI流畅无卡顿  
+- 🖥️ **工业级UI**：深色主题现代界面，支持高分屏适配，跨平台兼容
+- 📸 **智能抓拍**：自动检测截图 + 手动抓拍，支持时间水印与JPEG质量调节
+- 🪟 **人性化交互**：窗口拖动自动全屏保持，响应式布局适配工控机屏幕
+
+---
+
+## 🎬 功能特性
+
+### 🔍 智能检测
+- **动态目标识别**：仅检测移动中的人物，静态人员自动过滤
+- **多模式运行**：实时检测(每帧) / 平衡模式(每2帧) / 节能模式(每3帧)
+- **置信度调节**：0.1-1.0 可调阈值，适应不同环境光线
+- **NMS非极大值抑制**：自动过滤重叠检测框，提升识别精度
+
+### 📷 截图系统
+- **自动抓拍**：检测到移动目标时自动保存，支持0.5-10秒间隔设置
+- **手动抓拍**：一键快速截图，支持快捷键操作
+- **时间水印**：自动叠加拍摄时间戳，支持中文显示，防伪溯源
+- **质量调节**：JPEG保存质量可调(85-98%)，平衡画质与存储
+
+### 💻 界面交互
+- **实时数据显示**：视频叠加层实时显示FPS、检测状态、目标数量
+- **日志系统**：彩色分级日志(信息/警告/错误)，支持时间戳精确到毫秒
+- **预览功能**：最新抓拍缩略图实时预览
+- **快捷操作**：一键打开截图文件夹，快速管理历史记录
+
+### ⚙️ 系统架构
+- **线程安全**：FrameBuffer线程安全队列，防止帧丢失与内存溢出
+- **资源管理**：优雅的异常处理与资源释放机制，防止摄像头占用
+- **打包支持**：内置 `resource_path` 函数，完美支持 PyInstaller 单文件打包
+- **多屏适配**：拖动标题栏跨屏幕时自动重新最大化，适配多显示器环境
+
+---
+
+## 🛠️ 技术栈
+
+| 模块 | 用途 | 版本要求 |
+|------|------|----------|
+| **Python** | 核心语言 | 3.7+ |
+| **OpenCV (cv2)** | 图像处理、YOLO推理、摄像头采集 | 4.5+ |
+| **PyQt5** | GUI界面、信号槽机制、多线程 | 5.12+ |
+| **PIL (Pillow)** | 中文水印绘制、图像格式转换 | 8.0+ |
+| **NumPy** | 数值计算、数组操作 | 1.19+ |
+
+---
+
+## 📦 安装与运行
+
+### 环境要求
+- Windows 10/11 / Linux / macOS
+- Python 3.7 或更高版本
+- USB摄像头或内置摄像头
+- **可选**：NVIDIA GPU + CUDA (可启用GPU加速推理)
+
+### 1. 克隆仓库
+```bash
+git clone https://github.com/yourusername/intelligent-monitoring-system.git
+cd intelligent-monitoring-system
