@@ -1,5 +1,5 @@
 🎯 Smart Motion Detection System
-<div align="center">
+<div align="left">
 https://img.shields.io/badge/Python-3.7%252B-blue
 https://img.shields.io/badge/GUI-PyQt5-green
 https://img.shields.io/badge/Computer_Vision-OpenCV-orange
