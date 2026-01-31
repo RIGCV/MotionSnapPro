@@ -1,22 +1,8 @@
-&lt;p align="left"&gt;
-  &lt;img src="https://img.shields.io/badge/Python-3.7+-blue.svg" alt="Python Version"&gt;
-  &lt;img src="https://img.shields.io/badge/OpenCV-4.x-green.svg" alt="OpenCV"&gt;
-  &lt;img src="https://img.shields.io/badge/PyQt5-5.x-orange.svg" alt="PyQt5"&gt;
-  &lt;img src="https://img.shields.io/badge/YOLO-v3/v3--tiny-red.svg" alt="YOLO"&gt;
-  &lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"&gt;
-&lt;/p&gt;
-
-&lt;h1 align="center"&gt;智能动态监控系统 V2.4&lt;/h1&gt;
-&lt;p align="center"&gt;
-  &lt;b&gt;基于YOLO与背景减除算法的实时移动人物检测系统&lt;/b&gt;&lt;br&gt;
-  &lt;i&gt;Industrial-grade Intelligent Dynamic Monitoring System&lt;/i&gt;
-&lt;/p&gt;
-
 ---
 
 ## 📋 项目简介
 
-智能动态监控系统是一款基于 **Python + OpenCV + PyQt5** 开发的高性能实时视频监控软件。系统采用 **YOLOv3/v3-tiny** 深度学习模型结合 **MOG2背景减除算法**，实现精准的**动态人物检测**，有效过滤静态背景干扰，适用于工业监控、安防巡检、人流统计等场景。
+智能动态监控系统是一款基于 **Python + OpenCV + PyQt5** 开发的高性能实时视频监控软件。系统采用 **YOLOv3-tiny** 深度学习模型结合 **MOG2背景减除算法**，实现精准的**动态人物检测**，有效过滤静态背景干扰，适用于工业监控、安防巡检、人流统计等场景。
 
 ### ✨ 核心优势
 - 🎯 **双重过滤机制**：YOLO目标检测 + 背景减除算法，仅捕捉移动人物，减少误报
@@ -71,11 +57,6 @@
 
 ### 环境要求
 - Windows 10/11 / Linux / macOS
-- Python 3.7 或更高版本
 - USB摄像头或内置摄像头
-- **可选**：NVIDIA GPU + CUDA (可启用GPU加速推理)
+- 直接下载可用
 
-### 1. 克隆仓库
-```bash
-git clone https://github.com/yourusername/intelligent-monitoring-system.git
-cd intelligent-monitoring-system
