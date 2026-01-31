@@ -60,7 +60,15 @@
 - USB摄像头或内置摄像头
 - 直接下载可用
 
+---
+
+## 🛠️ 程序运行截图展示（已遮盖摄像头）
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/33708a7e-021e-4765-af78-14801da4494e" />
-![Uploading image.png…]()
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6a6b8f2f-1f1c-4378-a922-55779557a93e" />
 
+---
+
+## 🎬 如需源码，可直接联系作者，邮箱：wnb_915@163.com
+
+---
